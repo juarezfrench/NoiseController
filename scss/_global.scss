@@ -1,0 +1,61 @@
+html {
+ 
+    background-image: url("../img/children-cute-drawing-159823-1024mono.jpg" );
+    background-size: auto auto; 
+      
+    font-size: 62.5%;
+
+
+
+    @include tabletHeight {
+        background-image: none;
+        background: $NClightSlate;
+
+    }
+
+
+    body {
+        width: 100%;
+        
+        font-family: 'sandShoesBold';
+        font-weight: bolder;
+       
+    }
+
+
+
+
+    h1 {
+    font-size: 3.5rem;
+    }
+
+
+    h2 {
+    font-size: 2.25rem;
+    margin-bottom: 5%;
+    font-family: 'skruffyAngel';
+    font-weight: bold;
+    }
+
+
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 5%;
+        }
+
+
+    ul {
+        list-style-type: square;
+    
+        margin: 2% 0% 2% 5%;
+        width: 85%;
+        }
+
+        li {
+            padding: .375%;
+            font-family: 'Muli', sans-serif;
+        
+            text-shadow: 1px 1px 2px darkgray;
+        
+        }
+    }

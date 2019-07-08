@@ -1,0 +1,22 @@
+{
+  "name": "landing2",
+  "version": "1.0.0",
+  "description": "Build Week Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "document.let appleLogo = document.getElementalByIf(\"apple\");"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lambda-noise-controller/landing2.git"
+  },
+  "author": "Mark French",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lambda-noise-controller/landing2/issues"
+  },
+  "homepage": "https://github.com/lambda-noise-controller/landing2#readme",
+  "devDependencies": {
+    "eslint": "^6.0.1"
+  }
+}

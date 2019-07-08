@@ -1,0 +1,61 @@
+// colors
+
+$NCred: #D92949;
+$NCviolet: #7F3FBF;
+$NCgreen: rgb(12, 184, 38);
+$NCyellow: #F2E205;
+$NCorange: #F28705;
+$NCgray: darkgray;
+$NClightGray: lightgray;
+$NCblue: blue;
+$NCdarkSlate: darkslategray;
+$NClightSlate: lightslategray;
+$NCpowderYellow: rgb(247, 240, 151);
+$NCgrannySmith: rgba(107, 255, 70, 0.815);
+
+$apple-red: rgba(125, 250, 93, 0.815);
+// phone
+
+
+
+$phone: screen and (568px);  
+
+$tablet: screen and (800px);
+$mobile: screen and (max-width 860px);
+
+
+@font-face {
+  font-family: 'skruffyAngel';
+  src: 
+  url('../fonts/djb_scruffy_angel-webfont.woff') format('woff'),
+  url('../fonts/djb_scruffy_angel-webfont.woff2') format('woff2'),
+  url('../fonts/djb_scruffy_angel-webfont.ttf') format('truetype'),
+  
+}
+
+@font-face {
+  font-family: 'skritchSkratch';
+  src: 
+  url('../fonts/djb_skritch_skratch-webfont.woff') format('woff'),
+  url('../fonts/djb_skritch_skratch-webfont.woff2') format('woff2'),
+  url('../fonts/djb_skritch_skratch-webfont.ttf') format('truetype'),
+  
+}
+
+@font-face {
+  font-family: 'sandShoes';
+  src: 
+  url('../fonts/djb_sand_shoes_and_a_fez-webfont.woff') format('woff'),
+  url('../fonts/djb_sand_shoes_and_a_fez-webfont.woff2') format('woff2'),
+  url('../djb_sand_shoes_and_a_fez-webfont.ttf') format('truetype'),
+  
+}
+
+@font-face {
+  font-family: 'sandShoesBold';
+  src: 
+  url('../fonts/djb_sand_shoes_and_a_fez_bold-webfont.woff') format('woff'),
+  url('../fonts/djb_sand_shoes_and_a_fez_bold-webfont.woff2') format('woff2'),
+  url('../djb_sand_shoes_and_a_fez_bold-webfont.ttf') format('truetype'),
+  
+}

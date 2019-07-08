@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./scss/index.css" />
+    <!-- <link rel="stylesheet" href="style.css">  -->
+
+    <!-- JS -->
+    <script src="./js/index.js" async></script>
+    <!-- <script src="./js/cards.js" async></script> -->
+    <!-- Greensock -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=B612+Mono|Indie+Flower|Montserrat|Muli&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+
+    <title>Noise Controller - About Page</title>
+  </head>
+
+  <header>
+    <nav class="top-navbar">
+      <div class="visible-bar">
+        <button class="burger-icons" id="hamburger-icon">
+          <img
+            class="burger-img"
+            id="nice-little-burger"
+            src="./img/hamburger-small.png"
+          />
+        </button>
+        <button class="burger-icons" id="close-icon">
+          <img
+            class="burger-img"
+            id="nice-little-x"
+            src="./img/menu-close-x.png"
+          />
+        </button>
+        <!-- <span id="menuText">Menu</span> -->
+
+        <h1 id="pageTitle">Noise Controller</h1>
+      </div>
+      <div class="drop-bar">
+        <ul class="menu-items">
+          <li class="menu-links">
+            <a class="navA" id="home-link" href="index.html">Home</a>
+          </li>
+          <li class="menu-links">
+            <a
+              class="navA"
+              id="login-link"
+              href="https://noise-controller.netlify.com"
+              >Log In</a
+            >
+          </li>
+          <li class="menu-links">
+            <a class="navA" id="about-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- <body> -->
+
+  <body class="tabs">
+    <h2 class="our-devs">Our Development Team</h2>
+
+    <!-- TOP BAR COMPONENT -->
+
+    <!-- TABS COMPONENT -->
+    <div class="tabs">
+      <div class="topics">
+        <span class="bar-title">Component:</span>
+        <div class="tab active-tab topicBtn" data-tab="all" >ALL</div>
+        <div class="tab topicBtn" data-tab="projectLead">Project Lead</div>
+
+        <div class="tab topicBtn" data-tab="userInterface" >User Interface</div>
+        <div class="tab topicBtn" data-tab="frontEnd" >Front End</div>
+        <div class="tab topicBtn" data-tab="backEnd" >Back End</div>
+      </div>
+    </div>
+
+    <!-- CARDS COMPONENT -->
+    <section class="cards-container">
+       
+      <section class="card" data-tab="projectLead">
+          <button class="open-button">
+              <img class="little-x" id="open" src="./img/bio-circle.png" />
+              <!-- </button>
+                  <button class="close-button"> -->
+              <img class="little-x" id="close" src="./img/icon-close-circle.png" />
+            </button>
+        <div class="name-and-title">
+          <p class="headline name"> Brooks Vinyard</p>
+          <p class="team-title">Project Lead</p>
+        </div>
+
+        <div class="img-container">
+          <img class="dev-photo" src="./img/brooks.jpeg">
+        </div>
+        <div class="hidden-text">
+            <p>
+            Brooks is innovative, forward-thinking engineer, constantly on the
+            lookout to optimize, with an ability to analyze and clearly
+            communicate technical principles.
+            </p>
+        </div>
+
+      </section>
+      <section  class="card" data-tab="frontEnd">
+        <button class="open-button">
+          <img class="little-x" id="open" src="./img/bio-circle.png" />
+          <!-- </button>
+              <button class="close-button"> -->
+          <img class="little-x" id="close" src="./img/icon-close-circle.png" />
+        </button>
+        <div class="name-and-title">
+          <p class="headline name">Max David</p>
+          <span class="team-title" >Front End Developer</span>
+        </div>
+
+        <div class="img-container">
+          <img class="dev-photo" id="david" src="./img/max.jpeg" />
+        </div>
+        <div class="hidden-text">
+          <p>
+            Max is a creative and very resourceful UX engineer. He is currently
+            based out of San Francisco, and revels in the city's beauty
+          </p>
+          
+
+        </div>
+      </section>
+
+      <section class="card" data-tab="userInterface">
+        <button class="open-button">
+          <img class="little-x" id="open" src="./img/bio-circle.png" />
+          <!-- </button>
+              <button class="close-button"> -->
+          <img class="little-x" id="close" src="./img/icon-close-circle.png" />
+        </button>
+        <div class="name-and-title">
+          <p class="headline name">Quinton McNamee</p>
+          <span class="team-title" >User Interface Developer</span>
+        </div>
+        <div class="img-container">
+          <img class="dev-photo" src="./img/quinton.jpeg" />
+        </div>
+        <div class="hidden-text">
+            <p>
+            Quinton is a talented web developer with a can-do attitude. He has a
+            dog named Mack, and his favorite color is orange. Quinton became a
+            developer so that he could make cool apps for young students. His
+            favorite part of being a developer is seeing young students use the
+            apps he creates!
+            </p>
+        </div>
+
+      </section>
+
+      <section class="card" data-tab="userInterface">
+        <button class="open-button">
+          <img class="little-x" id="open" src="./img/bio-circle.png" />
+          <!-- </button>
+              <button class="close-button"> -->
+          <img class="little-x" id="close" src="./img/icon-close-circle.png" />
+        </button>
+        <div class="name-and-title">
+          <p class="headline name">Mark French</p>
+          <span class="team-title" >User Interface Developer</span>
+        </div>
+        <div class="img-container">
+          <img class="dev-photo" src="./img/mark.jpeg" />
+        </div>
+        <div class="hidden-text">
+            <p>
+              Mark is a full-stack web developer with operational experience in
+              finance and energy. He has five very talented kids and his wife is
+              an elementary school teacher. his favorite color is... are you ready
+              for this? Gray. He loves Mexican food, and became a developer so
+              that he could put his many ideas into action and help people solve
+              problems.
+            </p>
+         </div>   
+      </section>
+
+
+      <section  class="card" data-tab="backEnd">
+        <button class="open-button">
+          <img class="little-x" id="open" src="./img/bio-circle.png" />
+          <!-- </button>
+              <button class="close-button"> -->
+          <img class="little-x" id="close" src="./img/icon-close-circle.png" />
+        </button>
+        <div class="name-and-title">
+          <p class="headline name">David Clavijo</p>
+          <span class="team-title" >Back End Developer</span>
+        </div>
+
+        <div class="img-container">
+          <img class="dev-photo" id="david" src="./img/David.png" />
+        </div>
+        <div class="hidden-text">
+          <p>
+            David is a skilled web developer who loves quoting movies and eating
+            tacos. Becoming a developer has added another layer to his artistic
+            interests. In the future, he'd like to continue creating apps that
+            impact many people's lives
+          </p>
+          
+
+        </div>
+      </section>
+      
+    </section>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+    <!-- 
+    </div>
+  <!-- </body>
+<!-- </html> -->
+    -->
+  </body>
+</html>

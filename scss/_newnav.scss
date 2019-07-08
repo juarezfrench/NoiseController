@@ -1,0 +1,181 @@
+nav {
+  width: 100%;
+  display: flex;
+  //margin: 1% 2% 2% 0 ;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  //border: 1px solid $NCdarkSlate;
+ // @include idiotBox(blue);
+
+  .visible-bar {
+    display: flex;
+    //background: $NCgray;
+    flex-direction: row;
+    background: transparent;
+    opacity: 1;
+    width: 90%;
+
+    padding: 0% 0 0 0;
+    // border: 1px solid red;
+    margin: 1% 0 0% 0;
+    @include boxShadow;
+    @include borderRadius(5px);
+ 
+  // class="menu-links"
+  // .menu-icons {
+
+  // }
+
+  #hamburger-icon {
+    display: inline-flex;
+    background: transparent;
+    width: 10%;
+    //height:12%;
+    margin: 0 0 0% 0;
+    padding: 0 0 0% 0;
+    border: none;
+  }
+  #nice-little-burger {
+    display: flex;
+    width: 65%;
+    margin: 0 0 0 0;
+    padding: 0% 0 0% 9%;
+    background: transparent;
+  }
+  #close-icon {
+    display: none;
+    background: transparent;
+    width: 10%;
+    //height:12%;
+    margin: 0 0 0% 0;
+    padding: 0 0 0% 0;
+    border: none;
+  }
+  #nice-little-x {
+    display: flex;
+    width: 50%;
+    margin: 0 0 0 0;
+    padding: 0% 0% 0% 14%;
+    background: transparent;
+  }
+
+  h1 {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    font-family: "skritchSkratch";
+    color: $NCblue;
+    // font-size: 1.625rem;
+    justify-content: center;
+    // align-items: center;
+    text-align: center;
+    width: 80%;
+
+    padding: 2% 0 0 0;
+    margin: 1% 0 3% 0;
+    //@include idiotBox(red);
+  }
+
+  @include phone {
+    .visible-bar {
+      margin-top: 5%;
+      padding-top: 3%;
+    }
+   
+    h1 {
+    color: white;
+    font-size: large;
+    padding-top: 4%;
+  }
+}
+}
+  .drop-bar {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    background: $NClightSlate;
+    opacity: 0.7;
+    width: 70%;
+    padding: 0 0 0 0%;
+    height: 20%;
+    margin: 0 5% 0 5%;
+   
+    @include borderRadius(5px);
+   
+   // @include idiotBox(red);
+
+    .menu-items {
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 95%;
+      height: 10%;
+      // border: 1px solid green;
+      margin: 0 0 0.5% 0;
+      padding: 2% 0 2% 5%;
+      background: transparent;
+      @include borderRadius(5px);
+      @include boxShadow;
+     // @include idiotBox(yellow);
+
+      list-style: none;
+    }
+
+    .menu-links {
+      display: inline-flex;
+      justify-content: space-evenly;
+      width: auto;
+      // border: 1px solid violet;
+      padding: 0% 0 1% 0;
+      margin: 0 0 0 0;
+      background: transparent;
+    }
+
+    a {
+      text-decoration: none;
+      font-family: "Indie Flower";
+      font-size: x-large;
+      flex-wrap: nowrap;
+      background: transparent;
+      opacity: 1;
+      color: white;
+    }
+
+    @include phone {
+
+   
+      .drop-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        //@include idiotBox(red);
+      }
+      .menu-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: auto;
+        //@include idiotBox(yellow);
+
+        list-style: none;
+      }
+
+      .menu-links {
+        display: flex;
+        flex-direction: column;
+        background: darken(teal, 5%);
+        
+        justify-content: space-evenly;
+        align-items: center;
+        width: 85%;
+        padding: 4%;       
+        border-bottom: 1px solid black;
+        border-width: 98%;
+        @include boxShadow;
+      }
+    }
+  }
+}

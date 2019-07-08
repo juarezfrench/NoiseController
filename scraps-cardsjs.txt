@@ -1,0 +1,60 @@
+// const navButtons = document.querySelectorAll(".navA");
+// const headBtns = document.querySelectorAll("img");
+// const invisiBar = document.querySelector(".drop-bar");
+// const burger = document.querySelector("#hamburger-logo");
+// const closeX = document.querySelector("#close-logo");
+// const visiBox = document.querySelector(".visible-bar");
+
+  // this.tabData = this.indivCard.dataset.tab;
+
+
+
+
+    // if (this.tabData === "all") {
+    //   this.cards = document.querySelectorAll(".card");
+
+    // } else {
+    //   this.cards = document.querySelectorAll(`.card[data-tab='${this.tabData}']`
+    //   );
+    // }
+ // console.log(this.cards)
+     // const cards = document.querySelectorAll('.card');
+    // console.log(cards);
+    //console.log(tabs)
+
+ //const cards = document.querySelectorAll('.card')
+
+
+    // cards.forEach(card => card.style.display = "none");
+
+    // this.cards.forEach(card => card.selectCard());
+
+
+
+  // class TabCard {
+  //   constructor(cardElement) {
+  //     this.cardElement = cardElement;
+  //   }
+  //   selectCard() {
+  //     this.cardElement.style.display = "flex";
+  //   }
+  // }
+
+  /* START HERE:
+
+
+  let tabs = document.getElementsByClassName("tab");
+  console.log(tabs);
+
+  Array.from(tabs).forEach(currentValue => {
+    new TabLink(currentValue);
+  });
+
+constructor(indivCard) {
+    this.indivCard = indivCard;
+
+    this.cards = Array.from(this.cards).map(card => new indivCard(card));
+
+    this
+
+

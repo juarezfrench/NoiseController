@@ -1,0 +1,203 @@
+.home {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  margin: 2% 0 2% 0%;
+  //@include idiotBox(red);
+
+  @include phone {
+    flex-direction: column;
+  }
+  .features {
+    display: inline-flex;
+    justify-content: space-evenly;
+
+    background: $NCdarkSlate;
+    opacity: 0.7;
+    flex-wrap: wrap;
+    margin: 0% 0% 0% 5%;
+    padding: 1% 0 2% 0;
+    width: 90%;
+
+    font-family: "Indie Flower";
+
+   // @include idiotBox(yellow);
+
+    .image-container {
+      display: flexbox;
+      justify-content: flex-start;
+
+      width: 30%;
+
+      height: auto !important;
+      margin: 2% 0 0 2%;
+      @include boxShadow;
+    }
+    #quiet-kids {
+      width: 100%;
+    }
+
+    h2 {
+      text-align: center;
+      color: $NCyellow;
+      opacity: 1;
+     // margin-left: 10%;
+      font-size: xx-large;
+      font-family: "sandShoesBold";
+      margin: 5% 0 0 0%;
+      padding: 0 0 0 0%;
+      font-weight: bolder;
+
+      line-height: 125%;
+    }
+    li {
+      list-style: square;
+      display: flex;
+      color: white;
+      text-shadow: none;
+      width: 80%;
+      color: white;
+      opacity: 1;
+      margin-left: 10%;
+
+      font-family: "Indie Flower";
+      font-size: large;
+      line-height: 112%;
+    }
+      p {
+        width: 80%;
+        color: white;
+        opacity: 1;
+        margin: 1% 5% 0 10%;
+        padding: 0 0 0 0;
+        font-size: large;
+        line-height: 125.25%;
+      }
+
+   
+
+     @include phone {
+        justify-content: flex-start;
+        
+        .image-container {
+          display: none;
+        }
+        
+        .marketing-blurb {
+          display: none;
+        }
+
+        h2 {
+          font-size: x-large;
+          color: $NCyellow;
+        }
+
+        .features-text {
+          margin: 2%;
+        }
+
+
+
+    }
+  }
+  .slogan {
+    display: inline-flex;
+    flex-direction: row;
+    font-family: "Indie Flower";
+    flex-wrap: wrap;
+    width: 45%;
+
+    margin: 0% 5% 0 1%;
+    padding: 1% 0 3% 0;
+    align-items: center;
+    background: $NCdarkSlate;
+    opacity: 0.7;
+
+  
+  
+   
+   
+    h2 {
+      text-align: center;
+      color: $NCyellow;
+      opacity: 1;
+      margin: 9% 0 6% 10%;
+      font-size: xx-large;
+      font-family: "sandShoesBold";
+      font-weight: bolder;
+
+      line-height: 125%;
+    }
+
+    p {
+      display: flex;
+      width: 80%;
+      color: white;
+      opacity: 1;
+      margin: 1% 5% 0 10%;
+      padding: 0 0 0 0;
+      font-size: large;
+      line-height: 125.25%;
+    }
+    br {
+      padding: 1% 0 1% 0;
+      margin: 1% 0 1% 0;
+    }
+
+    #logIn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $NCgreen;
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+      padding: 0% 0 3% 0;
+      margin: 7% 0% 0% 12%;
+      width: 25%;
+      height: 12%;
+      font-family: "Indie Flower";
+      font-size: x-large;
+      cursor: pointer;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+      &:hover {
+        background-color: darken(teal, 5%);
+      }
+    }
+    @include phone {
+      display: flexbox;
+        width:90%;
+     
+      margin: 0 0 0 5% ;
+      justify-content: flex-start;
+     
+
+     .marketing-blurb {
+       display: none;
+        }
+
+      h2 {
+        font-size: x-large;
+        color: $NCyellow;
+        justify-content: center;
+        padding-left: 10%;
+      }
+
+      br {
+        display: none;
+      }
+      
+      button {
+
+        width: 45%;
+      }
+     
+    } 
+
+  }
+
+
+}

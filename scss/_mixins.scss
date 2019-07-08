@@ -1,0 +1,60 @@
+
+
+@mixin desktop {
+    @media (max-width: 1366px) {
+      @content;
+    }
+  }
+
+@mixin phone {
+  @media (max-width: 760px)  {
+      @content;
+    }
+}
+
+@mixin tablet {
+  @media (max-width: 770px) {
+    @content;
+  }
+}
+
+
+@mixin tabletHeight {
+  @media screen and (min-height: 670px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 920px) {
+    @content;
+  }
+}
+
+@mixin borderRadius($value) {
+  border-radius: #{$value};
+}
+
+@mixin textShadow {
+  text-shadow: 1px 1px 2px lightgray;
+}
+
+@mixin boxShadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@mixin idiotBox($value) {
+  border: 1px solid #{$value};
+}
+
+@mixin insertMargins($values) {
+  @each $var in $values {
+    margin: #{$var};
+  }
+}
+
+@mixin insertPadding($values) {
+  @each $var in $values {
+    padding: #{$var};
+  }
+}
